@@ -46,7 +46,7 @@ class Personaje {
         int dano = this.dano(enemigo);
         if (dano < 0) dano = 0;
         enemigo.vida -= dano;
-        System.out.println(this.nombre + " ha realizado " + dano + " puntos de da\u00f1o a " + enemigo.nombre);
+        System.out.println(this.nombre + " ha realizado " + dano + " puntos de daño a " + enemigo.nombre);
         if (enemigo.estaVivo()) {
             System.out.println("Vida de " + enemigo.nombre + " es " + enemigo.vida);
         } else {
@@ -69,7 +69,7 @@ class Guerrero extends Personaje {
         do {
             System.out.println("Elige un arma: (1) Acero Valyrio, da\u00f1o 8. (2) Matadragones, da\u00f1o 10");
             while (!scanner.hasNextInt()) {
-                System.out.println("Ingresa un n\u00famero v\u00e1lido.");
+                System.out.println("Ingresa un numero valido.");
                 scanner.next();
             }
             opcion = scanner.nextInt();
@@ -85,7 +85,7 @@ class Guerrero extends Personaje {
     @Override
     public void atributos() {
         super.atributos();
-        System.out.println("\u00b7Espada: " + espada);
+        System.out.println("Espada: " + espada);
     }
 
     @Override
